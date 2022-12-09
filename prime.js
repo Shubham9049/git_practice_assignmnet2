@@ -1,8 +1,11 @@
-let num=13;
-for(let i=0;i<num;i++){
-    if(num%2==0){
-        console.log("its a prime number")
-    }else {
-        ("not a prime number")
+let num =29,count =0;
+    for(let i=2;i<Math.sqrt(num);i++){
+        if(num%i==0){
+            count++
+        }
     }
+if(count==0){
+  console.log("It is Prime Number")
+}else{
+  console.log("It is not a Prime Number")
 }
